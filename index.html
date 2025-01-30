@@ -38,6 +38,16 @@
       tailwind.config = {
           theme: {
               extend: {
+
+                  screens: {
+        'xs': '400px',  // Extra small screens
+        'sm': '640px',  // Small (default Tailwind)
+        'md': '768px',  // Medium (default Tailwind)
+        'lg': '1024px', // Large (default Tailwind)
+        'xl': '1280px', // Extra large (default Tailwind)
+        '2xl': '1536px', // 2X large (default Tailwind)
+        '3xl': '1800px', // Custom large screen
+                  },
                   fontFamily: {
           sora: [ "Sora", "serif"]
         },
@@ -101,7 +111,7 @@
             <!-- hero section -->
              <div class=" text-center my-15 flex flex-col justify-center">
                   <!-- header text -->
-                   <div>
+                   <div class="space-y-5">
                         <h1 class=" text-5xl font-bold">
                               Freshness <span class="text-primary">You Can </span> <br>
                               <span class="text-primary">Count</span> On, Prices You’ll Love!
@@ -121,7 +131,7 @@
 
                
             <!-- service section -->
-             <section class="my-50">
+             <section class="my-50 lg:mx-auto">
             
 
                   <div class="my-12">
@@ -130,26 +140,12 @@
 
 
             <div class="flex flex-col gap-12  justify-center lg:flex-row">    
-          <!-- cart-1 -->
-           
-            <div class="card bg-base-100 w-96 shadow-xl bg-blue-100">
-                  <figure class="px-10 pt-1 mt-7">
-                    <img
-                      src="c2-assets/service.png"
-                      alt=""
-                      class="rounded-full bg-white p-4 " />
-                  </figure>
-                  <div class="card-body items-center text-center mb-9">
-                    <h2 class="card-title font-bold">24/7 Services </h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
-                  
-                  </div>
-                </div>
+          
 
 
                  <!-- cart-2 -->
            <div>
-            <div class="card bg-base-100 w-96 shadow-xl bg-blue-100">
+            <div class="card bg-base-100 shadow-xl bg-blue-100">
                   <figure class="px-10 pt-1 mt-7">
                     <img
                       src="c2-assets/delivery.png"
@@ -166,9 +162,26 @@
 </div>
 
 
+
+<!-- cart-1 -->
+           
+            <div class="card bg-base-100  shadow-xl bg-blue-100">
+      <figure class="px-10 pt-1 mt-7">
+        <img
+          src="c2-assets/service.png"
+          alt=""
+          class="rounded-full bg-white p-4 " />
+      </figure>
+      <div class="card-body items-center text-center mb-9">
+        <h2 class="card-title font-bold">24/7 Services </h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+      
+      </div>
+    </div>
+
                  <!-- cart-3 -->
            <div>
-            <div class="card bg-base-100 w-96 shadow-xl bg-blue-100">
+            <div class="card bg-base-100  shadow-xl bg-blue-100">
                   <figure class="px-10 pt-1 mt-7">
                     <img
                       src="c2-assets/healthy.png"
@@ -193,42 +206,179 @@
              <!-- popular -->
 
              <section>
-                  <div class="bg-blue-100">
+                  <div class="bg-blue-100 p-7 lg:p-32 3xl:p-40">
                         <!-- text -->
                         
-                              <div class="my-12">
+                              <div class=" mb-7">
                                     <h1 class="text-4xl font-bold text-primary">Popular Products</h1>
                               </div>
 
 
 
                               <!-- flax box -->
-                               <div>
-                                    <div class="bg-primary">
-                                          <h3>
+                               <div class="flex justify-center items-center gap-4 flex-col lg:flex-row ">
+                                    <div class=" bg-primary pt-3 pl-4 rounded-xl  lg:w-3/6">
+                                          <h3 class="font-bold text-3xl text-white mb-3 mt-5">
                                                 30% off
                                           </h3>
 
-                                          <p>Discover a world of treat,toys and <br> essentials handpicked things</p>
+                                          <p class="text-xl mb-3">Discover a world of treat,toys and essentials handpicked things</p>
 
-                                          <button class=" btn px-4">Buy Now</button>
+                                          <button class=" btn px-6 bg-white">Buy Now</button>
                                           <div>
-                                                <img src="c2-assets/vegetable-offer.png" alt="">
+                                                <img src="c2-assets/vegetable-offer.png" alt="" class="relative left-6">
                                           </div>
                                     </div>
-                                    <div>
-                                          <div>
-                                                <div>
-                                                      <img src="c" alt="">
+                                    <div class="grid grid-cols-2 gap-3 justify-center items-center lg:grid-cols-3">
+                                          <div class="  flex items-center gap-2 p-6 bg-green-200 rounded-xl ">
+                                                <div class="w-3/6">
+                                                      <img src="c2-assets/images.jpeg" alt="" class="w-full rounded-2xl">
                                                 </div>
                                                 <div>
-                                                      <div>
-                                                            <i class="bi bi-star-fill"></i>
-                                                            <h4>4.5</h4>
+                                                      <div class="flex gap-2">
+                                                            <i class="bi bi-star-fill text-orange-400"></i>
+                                                            <h4 class="font-bold text-xl">4.5</h4>
                                                       </div>
                                                       <div>
-                                                            <p>Onion 1 KG</p>
-                                                            <p>$39.5</p>
+                                                            <p class="font-bold text-xl">Onion 1 KG</p>
+                                                            <p class="font-bold text-xl">$39.5</p>
+                                                      </div>
+                                                </div>
+                                          </div>
+
+                                          <div class=" flex items-center gap-2 p-6 bg-green-200 rounded-xl ">
+                                                <div class="w-3/6">
+                                                      <img src="c2-assets/images.jpeg" alt="" class="w-full rounded-2xl">
+                                                </div>
+                                                <div>
+                                                      <div class="flex gap-2">
+                                                            <i class="bi bi-star-fill text-orange-400"></i>
+                                                            <h4 class="font-bold text-xl">4.5</h4>
+                                                      </div>
+                                                      <div>
+                                                            <p class="font-bold text-xl">Onion 1 KG</p>
+                                                            <p class="font-bold text-xl">$39.5</p>
+                                                      </div>
+                                                </div>
+                                          </div>
+
+
+                                          <div class=" flex items-center gap-2 p-6 bg-green-200 rounded-xl ">
+                                                <div class="w-3/6">
+                                                      <img src="c2-assets/images.jpeg" alt="" class="w-full rounded-2xl">
+                                                </div>
+                                                <div>
+                                                      <div class="flex gap-2">
+                                                            <i class="bi bi-star-fill text-orange-400"></i>
+                                                            <h4 class="font-bold text-xl">4.5</h4>
+                                                      </div>
+                                                      <div>
+                                                            <p class="font-bold text-xl">Onion 1 KG</p>
+                                                            <p class="font-bold text-xl">$39.5</p>
+                                                      </div>
+                                                </div>
+                                          </div>
+
+
+                                          <div class="flex items-center gap-2 p-6 bg-green-200 rounded-xl ">
+                                                <div class="w-3/6">
+                                                      <img src="c2-assets/images.jpeg" alt="" class="w-full rounded-2xl">
+                                                </div>
+                                                <div>
+                                                      <div class="flex gap-2">
+                                                            <i class="bi bi-star-fill text-orange-400"></i>
+                                                            <h4 class="font-bold text-xl">4.5</h4>
+                                                      </div>
+                                                      <div>
+                                                            <p class="font-bold text-xl">Onion 1 KG</p>
+                                                            <p class="font-bold text-xl">$39.5</p>
+                                                      </div>
+                                                </div>
+                                          </div>
+
+
+                                          <div class="flex items-center gap-2 p-6 bg-green-200 rounded-xl ">
+                                                <div class="w-3/6">
+                                                      <img src="c2-assets/images.jpeg" alt="" class="w-full rounded-2xl">
+                                                </div>
+                                                <div>
+                                                      <div class="flex gap-2">
+                                                            <i class="bi bi-star-fill text-orange-400"></i>
+                                                            <h4 class="font-bold text-xl">4.5</h4>
+                                                      </div>
+                                                      <div>
+                                                            <p class="font-bold text-xl">Onion 1 KG</p>
+                                                            <p class="font-bold text-xl">$39.5</p>
+                                                      </div>
+                                                </div>
+                                          </div>
+
+
+
+                                          <div class=" flex items-center gap-2 p-6 bg-green-200 rounded-xl ">
+                                                <div class="w-3/6">
+                                                      <img src="c2-assets/images.jpeg" alt="" class="w-full rounded-2xl">
+                                                </div>
+                                                <div>
+                                                      <div class="flex gap-2">
+                                                            <i class="bi bi-star-fill text-orange-400"></i>
+                                                            <h4 class="font-bold text-xl">4.5</h4>
+                                                      </div>
+                                                      <div>
+                                                            <p class="font-bold text-xl">Onion 1 KG</p>
+                                                            <p class="font-bold text-xl">$39.5</p>
+                                                      </div>
+                                                </div>
+                                          </div>
+
+
+                                          <div class=" flex items-center gap-2 p-6 bg-green-200 rounded-xl ">
+                                                <div class="w-3/6">
+                                                      <img src="c2-assets/images.jpeg" alt="" class="w-full rounded-2xl">
+                                                </div>
+                                                <div>
+                                                      <div class="flex gap-2">
+                                                            <i class="bi bi-star-fill text-orange-400"></i>
+                                                            <h4 class="font-bold text-xl">4.5</h4>
+                                                      </div>
+                                                      <div>
+                                                            <p class="font-bold text-xl">Onion 1 KG</p>
+                                                            <p class="font-bold text-xl">$39.5</p>
+                                                      </div>
+                                                </div>
+                                          </div>
+
+
+                                          <div class=" flex items-center gap-2 p-6 bg-green-200 rounded-xl ">
+                                                <div class="w-3/6">
+                                                      <img src="c2-assets/images.jpeg" alt="" class="w-full rounded-2xl">
+                                                </div>
+                                                <div>
+                                                      <div class="flex gap-2">
+                                                            <i class="bi bi-star-fill text-orange-400"></i>
+                                                            <h4 class="font-bold text-xl">4.5</h4>
+                                                      </div>
+                                                      <div>
+                                                            <p class="font-bold text-xl">Onion 1 KG</p>
+                                                            <p class="font-bold text-xl">$39.5</p>
+                                                      </div>
+                                                </div>
+                                          </div>
+
+
+
+                                          <div class=" hidden flex items-center gap-2 p-6 bg-green-200 rounded-xl lg:inline-flex">
+                                                <div class="w-3/6">
+                                                      <img src="c2-assets/images.jpeg" alt="" class="w-full rounded-2xl">
+                                                </div>
+                                                <div>
+                                                      <div class="flex gap-2">
+                                                            <i class="bi bi-star-fill text-orange-400"></i>
+                                                            <h4 class="font-bold text-xl">4.5</h4>
+                                                      </div>
+                                                      <div>
+                                                            <p class="font-bold text-xl">Onion 1 KG</p>
+                                                            <p class="font-bold text-xl">$39.5</p>
                                                       </div>
                                                 </div>
                                           </div>
@@ -239,6 +389,15 @@
             
                   </div>
              </section>
+
+
+             <!-- offer-section -->
+              <section>
+                  <div>
+                        <!-- text -->
+                         <div><h2>Arrival & Offers</h2></div>
+                  </div>
+              </section>
       </main>
 
 
