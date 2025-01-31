@@ -24,8 +24,6 @@
 <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
  <script src="https://cdn.tailwindcss.com"></script>
 
-<!-- css -->
- <link rel="stylesheet" href="grossary.css">
 
 
 
@@ -33,7 +31,16 @@
 
 
 <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
-    
+<style>
+      @keyframes scroll {
+          0% { transform: translateX(100%); }
+          100% { transform: translateX(-100%); }
+      }
+
+      .scrolling-text {
+          animation: scroll 15s linear infinite;
+      }
+  </style>
 
   <script>
       tailwind.config = {
@@ -64,6 +71,8 @@
           }
       }
   </script>
+
+
 
 
       <title>Nature's Platte</title>
@@ -118,6 +127,22 @@
                               <span class="text-primary">Count</span> On, Prices You’ll Love!
                         </h1>
                         <p class="text-lg ">Shop your daily essentials at unbeatable prices. From fresh produce to pantry <br> staples, we’ve got you covered every day!</p>
+
+
+
+
+                        <div class=" flex items-center justify-center ">
+                              <div class="overflow-hidden bg-green-600 text-white py-3 w-full">
+                                  <div class="whitespace-nowrap flex gap-10 scrolling-text">
+                                      <span class="text-lg ">🍏 Fresh Fruits & Vegetables</span>
+                                      <span class="text-lg font-semibold">🥖 Freshly Baked Bread Available</span>
+                                      <span class="text-lg font-semibold">🛒 Free Delivery on Orders Over $50</span>
+                                      <span class="text-lg font-semibold">💰 Special Discounts on Organic Items</span>
+                                  </div>
+                              </div>
+                        </div>
+                        
+
                    </div>
                    <div class="mx-auto">
                         <img src="c2-assets/hero-vegetables.png" alt="">
@@ -127,7 +152,7 @@
              
       </header>
 
-      <main class="container mx-auto">
+      <main class="container mx-auto ">
 
 
                
@@ -161,6 +186,9 @@
                 </div>
 
 </div>
+
+
+
 
 
 
@@ -201,6 +229,86 @@
  </div>
 </div>
              </section>
+
+
+             <!-- category -->
+
+<section class="px-24 my-40">
+
+      <div class="my-12 ">
+            <h1 class="text-4xl font-bold text-primary">Shop By Category
+            </h1>
+      </div>
+
+      <div class="flex gap-6 ">
+            
+                
+            <div class="card  image-full  shadow-sm">
+                  <figure>
+                    <img
+                      src="c2-assets/boxes-1834416_1280.jpg"
+                      alt="Shoes" />
+                  </figure>
+                  <div class="card-body">
+                    <h2 class="card-title text-5xl font-bold">Healthy & Fresh <br>
+                  Vegetable</h2>
+                    <p>Fresh, organic, and healthy vegetables delivered straight to your door!</p>
+                    <div class="card-actions justify-end">
+                      <button class="btn bg-green-300 px-9 py-2 text-xl font-bold">Shop Now</button>
+                    </div>
+                  </div>
+                </div>
+
+
+
+                <div class="card  image-full  shadow-sm">
+                  <figure>
+                    <img
+                      src="c2-assets/Condimente.jpeg"
+                      alt="Shoes" />
+                  </figure>
+                  <div class="card-body">
+                    <h2 class="card-title text-5xl font-bold">Best Spices</h2>
+                    <p>Experience the finest spices—rich flavors, fresh aroma, and pure quality!</p>
+                    <div class="card-actions justify-end">
+                        <button class="btn bg-green-300 px-9 py-2 text-xl font-bold">Shop Now</button>
+                    </div>
+                  </div>
+                </div>
+
+
+
+                
+
+
+                <div class="card  image-full  shadow-sm">
+                  <figure>
+                    <img
+                      src="c2-assets/Wonderful  🤩.jpeg"
+                      alt="Shoes" />
+                  </figure>
+                  <div class="card-body">
+                    <h2 class="card-title  text-5xl font-bold">Fresh & Healthy Fruits</h2>
+                    <p>Fresh, healthy, and organic fruits for a vibrant, nutritious life!</p>
+                    <div class="card-actions justify-end">
+                        <button class="btn bg-green-300 px-9 py-2 text-xl font-bold">Shop Now</button>
+                    </div>
+                  </div>
+                </div>
+
+
+
+                
+
+
+
+                
+
+
+      </div>
+
+
+</section>
 
 
 
@@ -393,7 +501,7 @@
 
 
              <!-- offer-section -->
-              <section  class="mt-24 mb-64">
+              <section  class="mt-24  mb-120 lg:mb-130 ">
                   <div class="mb-16">
                         <!-- text -->
                          <div><h2 class="text-4xl font-bold text-primary">Arrival & Offers</h2></div>
@@ -401,9 +509,9 @@
 
 
                   <div class="flex gap-10 flex-col lg:flex-row">
-                        <div class="bg-green-800 flex justify-center  items-center p-5 md:p-9 gap- rounded-xl mx-auto lg:w-4/7 2xl:w-2/7 3xl:w-2/7 ">
+                        <div class="bg-green-800 flex justify-center  items-center p-5 md:p-9 gap- rounded-xl mx-auto lg:w-4/7 ">
 
-                              <div class="space-y-3">
+                              <div class="space-y-3 flex justify-center items-center flex-col">
                                     <img src="c2-assets/dawat-logo.png" alt="">
                                     <p class="text-yellow-200 text-xl bg-green-400 p-5 rounded-2xl ">Cook Exotic Dishes</p>
 
@@ -435,36 +543,41 @@
               </section>
 
 
-                  
+          
+
 
       </main>
-       <!-- news section -->
-                       <section class=" news">
-                        <div class="bg-blue-200 flex justify-center items-center rounded-2xl">
-                              <div>
-                                    <img src="c2-assets/vegetable-busket.png" alt="">
-                              </div>
-
-
-                              <div class="space-y-3">
-                                    <h2 class="text-5xl font-bold text-black">Get Grocery News!</h2>
-                                    <p class="text-xl">Exclusive training tips, ticks, product deals and more.</p>
-                                    
-                                    <input type="text" placeholder="Enter email...." class="input w-[478px]"  />
-
-                                    <div>
-                                          <button class="btn px-9 bg-primary text-white">
-                                                Subscribe
-                                          </button>
-                                    </div>
-                              </div>
-                        </div>
-                       </section>
-
+       
 
       <!-- footer -->
-       <footer>
-            <div class="">
+       <footer class="relative">
+
+<!-- news section -->
+<section class=" absolute  inset-0 m-auto  -top-[60%]  lg:-top-64 container  ">
+      <div class="bg-blue-200 flex justify-center items-center flex-col lg:flex-row  rounded-2xl   py-10 mx-10">
+            <div>
+                  <img src="c2-assets/vegetable-busket.png" alt="">
+            </div>
+
+
+            <div class="space-y-3 flex justify-center items-center flex-col">
+                  <h2 class="text-5xl font-bold text-black">Get Grocery News!</h2>
+                  <p class="text-xl">Exclusive training tips, ticks, product deals and more.</p>
+                  
+                  <input type="text" placeholder="Enter email...." class="input w-3/4 lg:w-[478px]"  />
+
+                  <div>
+                        <button class="btn px-9 bg-primary text-white">
+                              Subscribe
+                        </button>
+                  </div>
+            </div>
+      </div>
+     </section>
+
+
+
+            <div class=" md:mt-100">
                   <footer class="footer sm:footer-horizontal bg-primary text-base-content p-10 pt-64 mx-auto">
                         <nav>
                           <img src="c2-assets/logo-footer.png" alt="">
