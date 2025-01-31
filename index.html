@@ -24,7 +24,8 @@
 <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
  <script src="https://cdn.tailwindcss.com"></script>
 
-
+<!-- css -->
+ <link rel="stylesheet" href="grossary.css">
 
 
 
@@ -67,10 +68,10 @@
 
       <title>Nature's Platte</title>
 </head>
-<body class="font-sora container mx-auto">
+<body class="font-sora ">
 <!-- header section -->
-      <header class=" bg-blue-50">
-            <nav>
+      <header class=" bg-blue-50 container mx-auto">
+            <nav class="container mx-auto">
 
                   <div class="navbar bg-base-100">
                         <div class="navbar-start">
@@ -145,7 +146,7 @@
 
                  <!-- cart-2 -->
            <div>
-            <div class="card bg-base-100 shadow-xl bg-blue-100 lg:w-96">
+            <div class="card bg-base-100 shadow-xl bg-blue-100 lg:w-">
                   <figure class="px-10 pt-1 mt-7">
                     <img
                       src="c2-assets/delivery.png"
@@ -165,7 +166,7 @@
 
 <!-- cart-1 -->
            
-            <div class="card bg-base-100  shadow-xl bg-blue-100 lg:w-96">
+            <div class="card bg-base-100  shadow-xl bg-blue-100 lg:w-">
       <figure class="px-10 pt-1 mt-7">
         <img
           src="c2-assets/service.png"
@@ -181,7 +182,7 @@
 
                  <!-- cart-3 -->
            <div>
-            <div class="card bg-base-100  shadow-xl bg-blue-100 lg:w-96">
+            <div class="card bg-base-100  shadow-xl bg-blue-100 lg:w-">
                   <figure class="px-10 pt-1 mt-7">
                     <img
                       src="c2-assets/healthy.png"
@@ -392,7 +393,7 @@
 
 
              <!-- offer-section -->
-              <section  class="mt-24 mb-24">
+              <section  class="mt-24 mb-64">
                   <div class="mb-16">
                         <!-- text -->
                          <div><h2 class="text-4xl font-bold text-primary">Arrival & Offers</h2></div>
@@ -400,7 +401,7 @@
 
 
                   <div class="flex gap-10 flex-col lg:flex-row">
-                        <div class="bg-green-800 flex justify-center  p-5 md:p-9 gap- rounded-xl mx-auto lg:w-4/7 ">
+                        <div class="bg-green-800 flex justify-center  items-center p-5 md:p-9 gap- rounded-xl mx-auto lg:w-4/7 2xl:w-2/7 3xl:w-2/7 ">
 
                               <div class="space-y-3">
                                     <img src="c2-assets/dawat-logo.png" alt="">
@@ -432,13 +433,39 @@
 
                   </div>
               </section>
+
+
+                  
+
       </main>
+       <!-- news section -->
+                       <section class=" news">
+                        <div class="bg-blue-200 flex justify-center items-center rounded-2xl">
+                              <div>
+                                    <img src="c2-assets/vegetable-busket.png" alt="">
+                              </div>
+
+
+                              <div class="space-y-3">
+                                    <h2 class="text-5xl font-bold text-black">Get Grocery News!</h2>
+                                    <p class="text-xl">Exclusive training tips, ticks, product deals and more.</p>
+                                    
+                                    <input type="text" placeholder="Enter email...." class="input w-[478px]"  />
+
+                                    <div>
+                                          <button class="btn px-9 bg-primary text-white">
+                                                Subscribe
+                                          </button>
+                                    </div>
+                              </div>
+                        </div>
+                       </section>
 
 
       <!-- footer -->
        <footer>
             <div class="">
-                  <footer class="footer sm:footer-horizontal bg-primary text-base-content p-10 pt-56">
+                  <footer class="footer sm:footer-horizontal bg-primary text-base-content p-10 pt-64 mx-auto">
                         <nav>
                           <img src="c2-assets/logo-footer.png" alt="">
                           <p class="text-white text-xl">
