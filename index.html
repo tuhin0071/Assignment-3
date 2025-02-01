@@ -40,6 +40,25 @@
       .scrolling-text {
           animation: scroll 15s linear infinite;
       }
+
+
+
+      @keyframes pull {
+          0% { scale: 1 ; }
+          50% {scale: 1.5; }
+          100% {scale: 1; }
+      }
+
+      .load :nth-child(1) {
+          animation: pull 3s ease-in infinite;
+      }
+      .load :nth-child(2) {
+          animation: pull 3s ease-in 1s infinite;
+      }
+      .load :nth-child(3) {
+          animation: pull 3s ease-in 2s infinite;
+      }
+
   </style>
 
   <script>
@@ -128,6 +147,8 @@
                         </h1>
                         <p class="text-lg ">Shop your daily essentials at unbeatable prices. From fresh produce to pantry <br> staples, we’ve got you covered every day!</p>
 
+                        
+
 
 
 
@@ -142,6 +163,15 @@
                               </div>
                         </div>
                         
+
+                               <div class=" load flex justify-center items-center my-36  gap-6 ">
+                                    <div class="w-[25px] h-[25px] rounded-full bg-primary relative"></div>
+                                    <div class="w-[25px] h-[25px] rounded-full bg-primary relative"></div>
+                                    <div class="w-[25px] h-[25px] rounded-full bg-primary relative"></div>
+
+                                    <div class="w-[0px] h-[80px] rounded-full"></div>
+
+                               </div>
 
                    </div>
                    <div class="mx-auto">
